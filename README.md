@@ -11,26 +11,7 @@ Este é um projeto básico de um servidor que utiliza Server-Sent Events (SSE) c
 
 Certifique-se de ter os seguintes softwares instalados em sua máquina:
 
-- Docker
-- Docker Compose
-
-Instalação e Execução
-
-- Faça o clone deste repositório para o seu ambiente local.
-
- - Abra um terminal e navegue até o diretório raiz do projeto.
-
-    Execute o seguinte comando para construir a imagem Docker e executar o contêiner:
-
-```shell
-    docker-compose up
-```
-
-- Abra um navegador da web compatível com SSE (por exemplo, Chrome, Firefox).
-
-- Acesse a URL http://localhost:3000 (ou a porta que você definiu).
-
-- O servidor enviará um evento a cada segundo para o cliente e você poderá ver os eventos aparecendo na página.
+- Dev Container
 
 ## Personalização
 
