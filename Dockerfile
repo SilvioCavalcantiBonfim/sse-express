@@ -1,7 +1,15 @@
 FROM node:20-slim
 
-WORKDIR /home/node/app
+USER root
 
-USER node
+WORKDIR /home/root/app
 
-CMD [ "tail", "-f", "/dev/null" ]
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "start"]
